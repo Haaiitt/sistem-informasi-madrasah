@@ -29,6 +29,41 @@
                     Berita & Pengumuman
                 </a>
                 @endcan
+                @can('viewAny', App\Models\Page::class)
+                <a href="{{ route('admin.pages.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.pages.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Halaman Statis
+                </a>
+                @endcan
+                @can('viewAny', App\Models\Event::class)
+                <a href="{{ route('admin.events.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.events.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Agenda Kegiatan
+                </a>
+                @endcan
+                @can('viewAny', App\Models\Gallery::class)
+                <a href="{{ route('admin.galleries.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.galleries.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Galeri Foto
+                </a>
+                @endcan
+                @can('viewAny', App\Models\Banner::class)
+                <a href="{{ route('admin.banners.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.banners.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Banner Beranda
+                </a>
+                @endcan
+                @can('view', App\Models\Setting::class)
+                <a href="{{ route('admin.settings.edit') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.settings.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Identitas Madrasah
+                </a>
+                @endcan
                 <a href="{{ route('profile.edit') }}"
                 class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
                         {{ request()->routeIs('profile.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">

@@ -22,6 +22,13 @@
                           {{ request()->routeIs('admin.users.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
                     Kelola Akun
                 </a>
+                @can('viewAny', App\Models\Post::class)
+                <a href="{{ route('admin.posts.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.posts.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Berita & Pengumuman
+                </a>
+                @endcan
                 <a href="{{ route('profile.edit') }}"
                 class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
                         {{ request()->routeIs('profile.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">

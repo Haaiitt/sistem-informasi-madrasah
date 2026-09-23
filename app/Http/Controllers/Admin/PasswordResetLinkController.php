@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Services\PasswordResetLinkService;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Auth;
 
 class PasswordResetLinkController extends Controller
 {
@@ -17,7 +18,7 @@ class PasswordResetLinkController extends Controller
     {
         $this->authorize('issueResetLink', $user);
 
-        $rawToken = $this->links->issue($user, auth()->user());
+        $rawToken = $this->links->issue($user, Auth::user());
 
         return back()->with('reset_link', route('password-reset.show', ['token' => $rawToken]));
     }

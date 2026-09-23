@@ -131,7 +131,9 @@ class RoleAndPermissionSeeder extends Seeder
 
         foreach ($this->permissionsByRole as $roleName => $permissionNames) {
             $roles[$roleName]->permissions()->sync(
-                $permissions->only($permissionNames)->pluck('id')
+                $permissions
+                    ->filter(fn (Permission $permission) => in_array($permission->name, $permissionNames))
+                    ->pluck('id')
             );
         }
     }

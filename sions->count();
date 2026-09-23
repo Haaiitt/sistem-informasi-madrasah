@@ -1,0 +1,364 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#8348
+    [34mall[39m: [
+      [34m"[39m[34macademic_years.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8688
+        [34mid[39m: [35m2[39m,
+        [34mname[39m: [32m"[39m[32macademic_years.create[39m[32m"[39m,
+      },
+      [34m"[39m[34macademic_years.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8689
+        [34mid[39m: [35m3[39m,
+        [34mname[39m: [32m"[39m[32macademic_years.update[39m[32m"[39m,
+      },
+      [34m"[39m[34macademic_years.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8686
+        [34mid[39m: [35m1[39m,
+        [34mname[39m: [32m"[39m[32macademic_years.view[39m[32m"[39m,
+      },
+      [34m"[39m[34madmission_results.publish[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8685
+        [34mid[39m: [35m70[39m,
+        [34mname[39m: [32m"[39m[32madmission_results.publish[39m[32m"[39m,
+      },
+      [34m"[39m[34madmission_waves.close[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8684
+        [34mid[39m: [35m66[39m,
+        [34mname[39m: [32m"[39m[32madmission_waves.close[39m[32m"[39m,
+      },
+      [34m"[39m[34madmission_waves.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8683
+        [34mid[39m: [35m63[39m,
+        [34mname[39m: [32m"[39m[32madmission_waves.create[39m[32m"[39m,
+      },
+      [34m"[39m[34madmission_waves.open[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8682
+        [34mid[39m: [35m65[39m,
+        [34mname[39m: [32m"[39m[32madmission_waves.open[39m[32m"[39m,
+      },
+      [34m"[39m[34madmission_waves.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8681
+        [34mid[39m: [35m64[39m,
+        [34mname[39m: [32m"[39m[32madmission_waves.update[39m[32m"[39m,
+      },
+      [34m"[39m[34madmission_waves.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8680
+        [34mid[39m: [35m30[39m,
+        [34mname[39m: [32m"[39m[32madmission_waves.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mapplicant_accounts.issue_reset_link[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8679
+        [34mid[39m: [35m74[39m,
+        [34mname[39m: [32m"[39m[32mapplicant_accounts.issue_reset_link[39m[32m"[39m,
+      },
+      [34m"[39m[34mapplicants.convert_to_student[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8678
+        [34mid[39m: [35m33[39m,
+        [34mname[39m: [32m"[39m[32mapplicants.convert_to_student[39m[32m"[39m,
+      },
+      [34m"[39m[34mapplicants.decide[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8677
+        [34mid[39m: [35m68[39m,
+        [34mname[39m: [32m"[39m[32mapplicants.decide[39m[32m"[39m,
+      },
+      [34m"[39m[34mapplicants.export[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8676
+        [34mid[39m: [35m32[39m,
+        [34mname[39m: [32m"[39m[32mapplicants.export[39m[32m"[39m,
+      },
+      [34m"[39m[34mapplicants.record_reenrollment[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8675
+        [34mid[39m: [35m69[39m,
+        [34mname[39m: [32m"[39m[32mapplicants.record_reenrollment[39m[32m"[39m,
+      },
+      [34m"[39m[34mapplicants.verify[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8674
+        [34mid[39m: [35m67[39m,
+        [34mname[39m: [32m"[39m[32mapplicants.verify[39m[32m"[39m,
+      },
+      [34m"[39m[34mapplicants.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8673
+        [34mid[39m: [35m31[39m,
+        [34mname[39m: [32m"[39m[32mapplicants.view[39m[32m"[39m,
+      },
+      [34m"[39m[34maudit_logs.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8672
+        [34mid[39m: [35m90[39m,
+        [34mname[39m: [32m"[39m[32maudit_logs.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mbanners.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8671
+        [34mid[39m: [35m58[39m,
+        [34mname[39m: [32m"[39m[32mbanners.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mbanners.delete[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8670
+        [34mid[39m: [35m60[39m,
+        [34mname[39m: [32m"[39m[32mbanners.delete[39m[32m"[39m,
+      },
+      [34m"[39m[34mbanners.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8669
+        [34mid[39m: [35m59[39m,
+        [34mname[39m: [32m"[39m[32mbanners.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mbanners.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8668
+        [34mid[39m: [35m57[39m,
+        [34mname[39m: [32m"[39m[32mbanners.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mclass_enrollments.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8667
+        [34mid[39m: [35m22[39m,
+        [34mname[39m: [32m"[39m[32mclass_enrollments.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mclass_enrollments.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8666
+        [34mid[39m: [35m23[39m,
+        [34mname[39m: [32m"[39m[32mclass_enrollments.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mclass_enrollments.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8665
+        [34mid[39m: [35m21[39m,
+        [34mname[39m: [32m"[39m[32mclass_enrollments.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mclassrooms.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8664
+        [34mid[39m: [35m19[39m,
+        [34mname[39m: [32m"[39m[32mclassrooms.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mclassrooms.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8663
+        [34mid[39m: [35m20[39m,
+        [34mname[39m: [32m"[39m[32mclassrooms.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mclassrooms.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8662
+        [34mid[39m: [35m18[39m,
+        [34mname[39m: [32m"[39m[32mclassrooms.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mdashboard.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8661
+        [34mid[39m: [35m37[39m,
+        [34mname[39m: [32m"[39m[32mdashboard.view[39m[32m"[39m,
+      },
+      [34m"[39m[34memployees.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8660
+        [34mid[39m: [35m14[39m,
+        [34mname[39m: [32m"[39m[32memployees.create[39m[32m"[39m,
+      },
+      [34m"[39m[34memployees.export[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8659
+        [34mid[39m: [35m17[39m,
+        [34mname[39m: [32m"[39m[32memployees.export[39m[32m"[39m,
+      },
+      [34m"[39m[34memployees.import[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8658
+        [34mid[39m: [35m16[39m,
+        [34mname[39m: [32m"[39m[32memployees.import[39m[32m"[39m,
+      },
+      [34m"[39m[34memployees.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8657
+        [34mid[39m: [35m15[39m,
+        [34mname[39m: [32m"[39m[32memployees.update[39m[32m"[39m,
+      },
+      [34m"[39m[34memployees.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8656
+        [34mid[39m: [35m13[39m,
+        [34mname[39m: [32m"[39m[32memployees.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mevents.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8655
+        [34mid[39m: [35m49[39m,
+        [34mname[39m: [32m"[39m[32mevents.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mevents.delete[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8654
+        [34mid[39m: [35m52[39m,
+        [34mname[39m: [32m"[39m[32mevents.delete[39m[32m"[39m,
+      },
+      [34m"[39m[34mevents.publish[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8653
+        [34mid[39m: [35m51[39m,
+        [34mname[39m: [32m"[39m[32mevents.publish[39m[32m"[39m,
+      },
+      [34m"[39m[34mevents.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8652
+        [34mid[39m: [35m50[39m,
+        [34mname[39m: [32m"[39m[32mevents.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mevents.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8651
+        [34mid[39m: [35m48[39m,
+        [34mname[39m: [32m"[39m[32mevents.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mgalleries.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8650
+        [34mid[39m: [35m54[39m,
+        [34mname[39m: [32m"[39m[32mgalleries.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mgalleries.delete[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8649
+        [34mid[39m: [35m56[39m,
+        [34mname[39m: [32m"[39m[32mgalleries.delete[39m[32m"[39m,
+      },
+      [34m"[39m[34mgalleries.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8648
+        [34mid[39m: [35m55[39m,
+        [34mname[39m: [32m"[39m[32mgalleries.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mgalleries.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8647
+        [34mid[39m: [35m53[39m,
+        [34mname[39m: [32m"[39m[32mgalleries.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mguardians.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8646
+        [34mid[39m: [35m11[39m,
+        [34mname[39m: [32m"[39m[32mguardians.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mguardians.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8645
+        [34mid[39m: [35m12[39m,
+        [34mname[39m: [32m"[39m[32mguardians.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mguardians.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8644
+        [34mid[39m: [35m10[39m,
+        [34mname[39m: [32m"[39m[32mguardians.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mmessages.send_broadcast[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8643
+        [34mid[39m: [35m72[39m,
+        [34mname[39m: [32m"[39m[32mmessages.send_broadcast[39m[32m"[39m,
+      },
+      [34m"[39m[34mmessages.send_individual[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8642
+        [34mid[39m: [35m71[39m,
+        [34mname[39m: [32m"[39m[32mmessages.send_individual[39m[32m"[39m,
+      },
+      [34m"[39m[34mmessages.view_threads[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8641
+        [34mid[39m: [35m73[39m,
+        [34mname[39m: [32m"[39m[32mmessages.view_threads[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_applications.check_nisn[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8640
+        [34mid[39m: [35m76[39m,
+        [34mname[39m: [32m"[39m[32mmy_applications.check_nisn[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_applications.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8639
+        [34mid[39m: [35m75[39m,
+        [34mname[39m: [32m"[39m[32mmy_applications.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_applications.print_receipt[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8638
+        [34mid[39m: [35m80[39m,
+        [34mname[39m: [32m"[39m[32mmy_applications.print_receipt[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_applications.submit[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8637
+        [34mid[39m: [35m79[39m,
+        [34mname[39m: [32m"[39m[32mmy_applications.submit[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_applications.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8636
+        [34mid[39m: [35m78[39m,
+        [34mname[39m: [32m"[39m[32mmy_applications.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_applications.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8635
+        [34mid[39m: [35m77[39m,
+        [34mname[39m: [32m"[39m[32mmy_applications.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_messages.send_reply[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8634
+        [34mid[39m: [35m82[39m,
+        [34mname[39m: [32m"[39m[32mmy_messages.send_reply[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_messages.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8633
+        [34mid[39m: [35m81[39m,
+        [34mname[39m: [32m"[39m[32mmy_messages.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mmy_result.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8632
+        [34mid[39m: [35m83[39m,
+        [34mname[39m: [32m"[39m[32mmy_result.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mpages.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8631
+        [34mid[39m: [35m44[39m,
+        [34mname[39m: [32m"[39m[32mpages.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mpages.delete[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8630
+        [34mid[39m: [35m47[39m,
+        [34mname[39m: [32m"[39m[32mpages.delete[39m[32m"[39m,
+      },
+      [34m"[39m[34mpages.publish[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8629
+        [34mid[39m: [35m46[39m,
+        [34mname[39m: [32m"[39m[32mpages.publish[39m[32m"[39m,
+      },
+      [34m"[39m[34mpages.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8628
+        [34mid[39m: [35m45[39m,
+        [34mname[39m: [32m"[39m[32mpages.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mpages.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8627
+        [34mid[39m: [35m43[39m,
+        [34mname[39m: [32m"[39m[32mpages.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mposts.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8626
+        [34mid[39m: [35m39[39m,
+        [34mname[39m: [32m"[39m[32mposts.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mposts.delete[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8625
+        [34mid[39m: [35m42[39m,
+        [34mname[39m: [32m"[39m[32mposts.delete[39m[32m"[39m,
+      },
+      [34m"[39m[34mposts.publish[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8624
+        [34mid[39m: [35m41[39m,
+        [34mname[39m: [32m"[39m[32mposts.publish[39m[32m"[39m,
+      },
+      [34m"[39m[34mposts.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8623
+        [34mid[39m: [35m40[39m,
+        [34mname[39m: [32m"[39m[32mposts.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mposts.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8622
+        [34mid[39m: [35m38[39m,
+        [34mname[39m: [32m"[39m[32mposts.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mpublic_messages.reply[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8621
+        [34mid[39m: [35m35[39m,
+        [34mname[39m: [32m"[39m[32mpublic_messages.reply[39m[32m"[39m,
+      },
+      [34m"[39m[34mpublic_messages.update_status[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8620
+        [34mid[39m: [35m36[39m,
+        [34mname[39m: [32m"[39m[32mpublic_messages.update_status[39m[32m"[39m,
+      },
+      [34m"[39m[34mpublic_messages.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8619
+        [34mid[39m: [35m34[39m,
+        [34mname[39m: [32m"[39m[32mpublic_messages.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mroles.assign[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8618
+        [34mid[39m: [35m88[39m,
+        [34mname[39m: [32m"[39m[32mroles.assign[39m[32m"[39m,
+      },
+      [34m"[39m[34msite_settings.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8617
+        [34mid[39m: [35m62[39m,
+        [34mname[39m: [32m"[39m[32msite_settings.update[39m[32m"[39m,
+      },
+      [34m"[39m[34msite_settings.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8616
+        [34mid[39m: [35m61[39m,
+        [34mname[39m: [32m"[39m[32msite_settings.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mstudents.change_status[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8615
+        [34mid[39m: [35m7[39m,
+        [34mname[39m: [32m"[39m[32mstudents.change_status[39m[32m"[39m,
+      },
+      [34m"[39m[34mstudents.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8614
+        [34mid[39m: [35m5[39m,
+        [34mname[39m: [32m"[39m[32mstudents.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mstudents.export[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8613
+        [34mid[39m: [35m9[39m,
+        [34mname[39m: [32m"[39m[32mstudents.export[39m[32m"[39m,
+      },
+      [34m"[39m[34mstudents.import[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8612
+        [34mid[39m: [35m8[39m,
+        [34mname[39m: [32m"[39m[32mstudents.import[39m[32m"[39m,
+      },
+      [34m"[39m[34mstudents.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8611
+        [34mid[39m: [35m6[39m,
+        [34mname[39m: [32m"[39m[32mstudents.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mstudents.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8610
+        [34mid[39m: [35m4[39m,
+        [34mname[39m: [32m"[39m[32mstudents.view[39m[32m"[39m,
+      },
+      [34m"[39m[34msubjects.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8609
+        [34mid[39m: [35m25[39m,
+        [34mname[39m: [32m"[39m[32msubjects.create[39m[32m"[39m,
+      },
+      [34m"[39m[34msubjects.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8608
+        [34mid[39m: [35m26[39m,
+        [34mname[39m: [32m"[39m[32msubjects.update[39m[32m"[39m,
+      },
+      [34m"[39m[34msubjects.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8607
+        [34mid[39m: [35m24[39m,
+        [34mname[39m: [32m"[39m[32msubjects.view[39m[32m"[39m,
+      },
+      [34m"[39m[34mteaching_assignments.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8606
+        [34mid[39m: [35m28[39m,
+        [34mname[39m: [32m"[39m[32mteaching_assignments.create[39m[32m"[39m,
+      },
+      [34m"[39m[34mteaching_assignments.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8605
+        [34mid[39m: [35m29[39m,
+        [34mname[39m: [32m"[39m[32mteaching_assignments.update[39m[32m"[39m,
+      },
+      [34m"[39m[34mteaching_assignments.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8604
+        [34mid[39m: [35m27[39m,
+        [34mname[39m: [32m"[39m[32mteaching_assignments.view[39m[32m"[39m,
+      },
+      [34m"[39m[34musers.create[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8603
+        [34mid[39m: [35m85[39m,
+        [34mname[39m: [32m"[39m[32musers.create[39m[32m"[39m,
+      },
+      [34m"[39m[34musers.deactivate[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8602
+        [34mid[39m: [35m87[39m,
+        [34mname[39m: [32m"[39m[32musers.deactivate[39m[32m"[39m,
+      },
+      [34m"[39m[34musers.issue_reset_link[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8601
+        [34mid[39m: [35m89[39m,
+        [34mname[39m: [32m"[39m[32musers.issue_reset_link[39m[32m"[39m,
+      },
+      [34m"[39m[34musers.update[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8600
+        [34mid[39m: [35m86[39m,
+        [34mname[39m: [32m"[39m[32musers.update[39m[32m"[39m,
+      },
+      [34m"[39m[34musers.view[39m[34m"[39m => [34;4mApp\Models\Permission[39;24m {#8599
+        [34mid[39m: [35m84[39m,
+        [34mname[39m: [32m"[39m[32musers.view[39m[32m"[39m,
+      },
+    ],
+  }

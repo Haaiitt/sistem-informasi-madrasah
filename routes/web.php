@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\Admin\PasswordResetLinkController;
+use App\Http\Controllers\Admin\PostController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -14,6 +15,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::patch('users/{user}/deactivate', [UserController::class, 'deactivate'])->name('users.deactivate');
     Route::patch('users/{user}/activate', [UserController::class, 'activate'])->name('users.activate');
     Route::post('users/{user}/reset-link', [PasswordResetLinkController::class, 'store'])->name('users.reset-link');
+    Route::resource('posts', PostController::class)->except(['show']);
 });
 
 Route::middleware('throttle:6,1')->group(function () {

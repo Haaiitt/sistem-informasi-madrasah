@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\DB;
+use App\Models\Applicant;
 
 class User extends Authenticatable
 {
@@ -64,5 +65,30 @@ class User extends Authenticatable
     public function hasRole(string $roleName): bool
     {
         return $this->roles->contains('name', $roleName);
+    }
+
+    public function applicants(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Applicant::class);
+    }
+
+    public function conversations(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Conversation::class);
+    }
+
+    public function announcements(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(Announcement::class, 'announcement_recipients')->withPivot('read_at');
+    }
+
+    // FR-MSG-08
+    public function unreadMessageCount(): int
+    {
+        $unreadConversations = Message::whereIn('conversation_id', $this->conversations()->pluck('id'))
+            ->where('sender_side', 'admin')->whereNull('read_at')->count();
+        $unreadAnnouncements = $this->announcements()->wherePivotNull('read_at')->count();
+
+        return $unreadConversations + $unreadAnnouncements;
     }
 }

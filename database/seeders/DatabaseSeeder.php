@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             RoleAndPermissionSeeder::class,
             PostCategorySeeder::class,
             SettingSeeder::class,
+            AcademicYearSeeder::class,
         ]);
     }
 }

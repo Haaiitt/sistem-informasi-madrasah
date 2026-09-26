@@ -26,6 +26,7 @@
                 <a href="{{ route('posts.index') }}" class="hover:text-primary transition-colors">Berita</a>
                 <a href="{{ route('events.index') }}" class="hover:text-primary transition-colors">Agenda</a>
                 <a href="{{ route('galleries.index') }}" class="hover:text-primary transition-colors">Galeri</a>
+                <a href="{{ route('contact.create') }}" class="hover:text-primary transition-colors">Hubungi Kami</a>
                 @foreach ($navPages as $navPage)
                     <a href="{{ route('pages.show', $navPage->slug) }}" class="hover:text-primary transition-colors">{{ $navPage->title }}</a>
                 @endforeach
@@ -36,6 +37,7 @@
             <a href="{{ route('posts.index') }}" class="block">Berita</a>
             <a href="{{ route('events.index') }}" class="block">Agenda</a>
             <a href="{{ route('galleries.index') }}" class="block">Galeri</a>
+            <a href="{{ route('contact.create') }}" class="hover:text-primary transition-colors">Hubungi Kami</a>
             @foreach ($navPages as $navPage)
                 <a href="{{ route('pages.show', $navPage->slug) }}" class="block">{{ $navPage->title }}</a>
             @endforeach

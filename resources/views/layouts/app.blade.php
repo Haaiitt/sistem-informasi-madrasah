@@ -17,11 +17,13 @@
                 <span class="font-semibold text-text">Sistem Informasi Madrasah</span>
             </div>
             <nav class="p-4 space-y-1">
-                <a href="{{ route('admin.users.index') }}"
-                   class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
-                          {{ request()->routeIs('admin.users.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
-                    Kelola Akun
+                @can('create', App\Models\Applicant::class)
+                <a href="{{ route('ppdb.applicants.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('ppdb.applicants.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Pendaftaran Anak
                 </a>
+                @endcan
                 @can('viewAny', App\Models\Post::class)
                 <a href="{{ route('admin.posts.index') }}"
                 class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
@@ -62,6 +64,52 @@
                 class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
                         {{ request()->routeIs('admin.settings.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
                     Identitas Madrasah
+                </a>
+                @endcan
+                @can('viewAny', App\Models\AdmissionWave::class)
+                <a href="{{ route('admin.admission-waves.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.admission-waves.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Gelombang PPDB
+                </a>
+                @endcan
+                @if (auth()->user()->hasRole('calon_siswa'))
+                    <a href="{{ route('ppdb.conversations.index') }}"
+                    class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                            {{ request()->routeIs('ppdb.conversations.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                        Pesan
+                        @php($unread = auth()->user()->unreadMessageCount())
+                        @if ($unread > 0)
+                            <span class="inline-flex items-center justify-center rounded-full bg-danger text-white text-xs w-5 h-5">{{ $unread }}</span>
+                        @endif
+                    </a>
+                @endif
+
+                @can('viewAny', App\Models\Announcement::class)
+                <a href="{{ route('admin.conversations.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.conversations.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Pesan Peserta
+                </a>
+                <a href="{{ route('admin.announcements.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.announcements.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Pengumuman
+                </a>
+                @endcan
+
+                @can('viewAny', App\Models\PublicMessage::class)
+                <a href="{{ route('admin.public-messages.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.public-messages.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Pesan Publik
+                </a>
+                @endcan
+                @can('viewAny', App\Models\User::class)
+                <a href="{{ route('admin.users.index') }}"
+                class="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors
+                        {{ request()->routeIs('admin.users.*') ? 'bg-primary/10 text-primary' : 'text-secondary hover:bg-background' }}">
+                    Kelola Akun
                 </a>
                 @endcan
                 <a href="{{ route('profile.edit') }}"
